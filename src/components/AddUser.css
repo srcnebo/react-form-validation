@@ -1,0 +1,100 @@
+/* Fonts from Google Fonts - more at https://fonts.google.com */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+@import url('https://fonts.googleapis.com/css?family=Merriweather:400,700');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #6391d4;
+  margin: 0;
+  padding: 0;
+  font-family: arial;
+  color: #333;
+}
+h1 {
+  font-weight: normal;
+  margin: 20px auto;
+  text-align: center;
+}
+form {
+  width: 500px;
+  margin: 20px auto;
+}
+
+input {
+  padding: 5px 10px;
+  font-size: 1.5em;
+  margin: 10px auto;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 5px;
+  border: 2px solid #ccc;
+  outline: none !important;
+}
+/* .valid {
+  border: 2px solid green;
+  border-color: #36cc36;
+} */
+
+input[type='text'] + label,
+input[type='email'] + label {
+  display: none;
+}
+
+input[type='radio'] {
+  display: inline-block;
+}
+
+.valid:focus {
+}
+.invalid:focus {
+  border-color: orange;
+  border-color: red;
+}
+.error {
+  opacity: 0;
+}
+input.valid + p {
+  font-family: arial;
+  font-size: 0.9em;
+  font-weight: bold;
+  text-align: center;
+  margin: 0 10px;
+  color: orange;
+  opacity: 0;
+  height: 0;
+}
+
+input.invalid + p {
+  opacity: 1;
+  height: auto;
+}
+
+button {
+  height: 40px;
+  width: 80px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  background-color: #ccc;
+}
+.submit-button {
+  background: #3bd33b;
+}
+
+.gender-options {
+  display: flex;
+  justify-content: space-around;
+  font-size: 1rem;
+}
+.gender {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  margin: 20px 10px;
+  font-size: 1.2rem;
+  align-content: center;
+}
